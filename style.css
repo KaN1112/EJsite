@@ -74,9 +74,33 @@ h1, h2, h3 {
     color: #00A8FF;
 }
 @media (max-width: 768px) {
-  .logo-center-img {
-    height: 35px;
-  }
+  /* PC（今まで通り横並び） */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* スマホ（縦並びにして数段にする） */
+@media (max-width: 768px) {
+    .nav {
+        display: flex;
+        flex-direction: column; /* ←縦並びにする */
+        gap: 12px;
+        align-items: flex-start; /* 左寄せ（中央にしたいなら center） */
+        margin-top: 10px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    /* ヘッダーの高さ調整（必要なら） */
+    .header {
+        flex-wrap: wrap; /* ←これで下に回り込める */
+        padding-bottom: 10px;
+    }
+}
 }
 /* ===========================
    ヒーローセクション（HOME）
@@ -384,4 +408,5 @@ h1, h2, h3 {
     color: #ddd;
     margin-top: 20px;
     line-height: 1.8;
+
 }
