@@ -74,27 +74,39 @@ h1, h2, h3 {
     color: #00A8FF;
 }
 @media (max-width: 768px) {
- @media (max-width: 768px) {
 
     .header {
-        flex-wrap: wrap; /* ← ナビが下に回り込めるようにする */
+        flex-wrap: wrap; /* ナビが下に回り込めるようにする */
         padding-bottom: 10px;
     }
 
     .nav {
         display: flex;
-        flex-direction: column; /* ← 縦並びにする */
+        flex-direction: column; /* 縦並びにする */
         gap: 12px;
         align-items: flex-start; /* 左寄せ（中央にしたいなら center） */
         margin-top: 10px;
-        width: 100%; /* ← 横幅いっぱいに広げる */
+        width: 100%;
     }
 
     .nav a {
         font-size: 16px;
         padding: 5px 0;
+        margin-left: 0; /* 左の余白を消すと綺麗 */
     }
-}
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .news-grid,
+    .members-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
 }
 /* ===========================
    ヒーローセクション（HOME）
@@ -358,11 +370,6 @@ h1, h2, h3 {
 =========================== */
 @media (max-width: 768px) {
 
-    /* ナビゲーション非表示（後でハンバーガー追加可） */
-    .nav {
-        display: none;
-    }
-
     .hero-title {
         font-size: 32px;
     }
@@ -404,4 +411,5 @@ h1, h2, h3 {
     line-height: 1.8;
 
 }
+
 
