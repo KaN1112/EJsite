@@ -74,31 +74,25 @@ h1, h2, h3 {
     color: #00A8FF;
 }
 @media (max-width: 768px) {
-  /* PC（今まで通り横並び） */
-.nav {
-    display: flex;
-    gap: 20px;
-}
+ @media (max-width: 768px) {
 
-/* スマホ（縦並びにして数段にする） */
-@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap; /* ← ナビが下に回り込めるようにする */
+        padding-bottom: 10px;
+    }
+
     .nav {
         display: flex;
-        flex-direction: column; /* ←縦並びにする */
+        flex-direction: column; /* ← 縦並びにする */
         gap: 12px;
         align-items: flex-start; /* 左寄せ（中央にしたいなら center） */
         margin-top: 10px;
+        width: 100%; /* ← 横幅いっぱいに広げる */
     }
 
     .nav a {
         font-size: 16px;
         padding: 5px 0;
-    }
-
-    /* ヘッダーの高さ調整（必要なら） */
-    .header {
-        flex-wrap: wrap; /* ←これで下に回り込める */
-        padding-bottom: 10px;
     }
 }
 }
@@ -410,3 +404,4 @@ h1, h2, h3 {
     line-height: 1.8;
 
 }
+
