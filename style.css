@@ -1,0 +1,387 @@
+/* ===========================
+   基本設定
+=========================== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Noto Sans JP', sans-serif;
+    background: #0A0A0A;
+    color: #fff;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    margin: 0 0 15px;
+}
+
+/* ===========================
+   ヘッダー
+=========================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #111;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left,
+.header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  justify-content: flex-start;
+}
+
+.header-right {
+  justify-content: flex-end;
+}
+
+.header-center {
+  flex: 0 0 auto; /* ← 中央ロゴの幅を固定 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-img {
+  height: 40px;
+}
+
+.logo-center-img {
+  height: 100px; /* 中央ロゴのサイズ調整 */
+}
+
+/* ロゴ画像のサイズ調整 */
+.logo img {
+    height: 55px;  /* ← 好きなサイズに変更してOK */
+    width: auto;
+}
+.nav a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    color: #00A8FF;
+}
+@media (max-width: 768px) {
+  .logo-center-img {
+    height: 35px;
+  }
+}
+/* ===========================
+   ヒーローセクション（HOME）
+=========================== */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #00111A, #000);
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00C8FF;
+}
+
+.hero-sub {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ccc;
+}
+.elite {
+  color: #FF2E2E; /* 赤文字 */
+  font-weight: bold;
+  -webkit-text-stroke: 1px #00C8FF; /* 水色の縁取り */
+}
+/* ===========================
+   ページタイトル
+=========================== */
+.page-header {
+    padding: 60px 20px 30px;
+    text-align: center;
+    background: #0F0F0F;
+    border-bottom: 1px solid #222;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  color: #FF2E2E;
+  font-weight: bold;
+}
+
+/* ===========================
+   コンテンツ（ABOUT）
+=========================== */
+.content {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+/* ===========================
+   ニュースカード
+=========================== */
+.news-section {
+    padding: 40px 20px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #222;
+    transition: 0.2s;
+}
+
+.news-card:hover {
+    border-color: #00A8FF;
+    transform: translateY(-4px);
+}
+
+.tag {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 12px;
+    background: #00A8FF;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.tag.red {
+    background: #FF2E2E;
+}
+
+.tag.blue {
+    background: #007BFF;
+}
+
+/* ===========================
+   メンバーカード
+=========================== */
+.members-grid {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.member-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #222;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.member-card:hover {
+    border-color: #FF2E2E;
+    transform: translateY(-4px);
+}
+
+.member-photo {
+    width: 100%;
+    height: 180px;
+    background: #222;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.photo-taichi {
+    background-image: url("images/members/taichi.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-ura {
+    background-image: url("images/members/ura.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-kyoroq {
+    background-image: url("images/members/kyoroq.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-bboy {
+    background-image: url("images/members/unknown.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-kan {
+    background-image: url("images/members/kan.PNG");
+    background-size: cover;
+    background-position: center;
+}
+.photo-kyutton {
+    background-image: url("images/members/kyutton.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-kapira {
+    background-image: url("images/members/kapira.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-naoyan {
+    background-image: url("images/members/naoyan.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-gou {
+    background-image: url("images/members/unknown.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-wassa {
+    background-image: url("images/members/wassa.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-budoutarou {
+    background-image: url("images/members/budoutarou.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-rimito {
+    background-image: url("images/members/rimito.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-yuful {
+    background-image: url("images/members/yuful.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-kame {
+    background-image: url("images/members/kame.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-spark {
+    background-image: url("images/members/spark.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-tokotoko {
+    background-image: url("images/members/tokotoko.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-ao {
+    background-image: url("images/members/unknown.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-kisaragi {
+    background-image: url("images/members/kisaragi.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-fell {
+    background-image: url("images/members/fell.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-kizuna {
+    background-image: url("images/members/kizuna.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* ===========================
+   SNSカード
+=========================== */
+.sns-links {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+}
+
+.sns-card {
+    display: block;
+    padding: 15px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 8px;
+    text-align: center;
+    color: #00A8FF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.sns-card:hover {
+    background: #00A8FF;
+    color: #000;
+}
+
+/* ===========================
+   スマホ対応
+=========================== */
+@media (max-width: 768px) {
+
+    /* ナビゲーション非表示（後でハンバーガー追加可） */
+    .nav {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .news-grid,
+    .members-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+}
+.footer {
+    background: #0a0a0a;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    border-top: 1px solid #222;
+}
+
+.footer p {
+    color: #888;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.member-update {
+    text-align: right;
+    color: #888;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.contact-text {
+    text-align: center;
+    font-size: 18px;
+    color: #ddd;
+    margin-top: 20px;
+    line-height: 1.8;
+}
