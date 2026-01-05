@@ -310,7 +310,7 @@ h1, h2, h3 {
     background-position: center;
 }
 .photo-kame {
-    background-image: url("images/members/kame.jpg");
+    background-image: url("images/members/unknown.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -341,6 +341,10 @@ h1, h2, h3 {
 }
 .photo-kizuna {
     background-image: url("images/members/kizuna.jpg");
+    background-size: cover;
+    background-position: center;
+ .photo-tonkotsu {
+    background-image: url("images/members/unknown.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -419,6 +423,7 @@ h1, h2, h3 {
     line-height: 1.8;
 
 }
+
 
 
 
