@@ -345,7 +345,7 @@ h1, h2, h3 {
     background-position: center;
  }
    .photo-tonkotsu {
-    background-image: url("images/members/unknown.jpg");
+    background-image: url("images/members/tonkotsu.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -428,6 +428,7 @@ h1, h2, h3 {
     line-height: 1.8;
 
 }
+
 
 
 
