@@ -446,6 +446,12 @@ h1, h2, h3 {
         aspect-ratio: 1 / 1; /* 正方形にする */
     }
 }
+@media (max-width: 768px) {
+    .member-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
 
 
 
