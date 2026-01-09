@@ -239,12 +239,13 @@ h1, h2, h3 {
 
 .member-photo {
     width: 100%;
-    aspect-ratio: 1 / 1; /* 正方形で統一 */
+    aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
     border-radius: 6px;
     margin-bottom: 15px;
 }
+
 .photo-taichi {
     background-image: url("images/members/taichi.jpg");
     background-size: cover;
@@ -445,19 +446,13 @@ h1, h2, h3 {
     line-height: 1.8;
 
 }
-
-@media (max-width: 768px) {
-    .member-photo {
-        height: auto;
-        aspect-ratio: 1 / 1; /* 正方形にする */
-    }
-}
 @media (max-width: 768px) {
     .member-card {
         max-width: 350px;
         margin: 0 auto;
     }
 }
+
 
 
 
