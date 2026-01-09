@@ -353,6 +353,17 @@ h1, h2, h3 {
     background-image: url("images/members/unknown.jpg");
     background-size: cover;
     background-position: center;
+}
+.photo-tr {
+    background-image: url("images/members/tr.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photo-elf {
+    background-image: url("images/members/elf.jpg");
+    background-size: cover;
+    background-position: center;
+}
 /* ===========================
    SNSカード
 =========================== */
@@ -428,6 +439,7 @@ h1, h2, h3 {
     line-height: 1.8;
 
 }
+
 
 
 
