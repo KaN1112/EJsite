@@ -440,6 +440,14 @@ h1, h2, h3 {
 
 }
 
+@media (max-width: 768px) {
+    .member-photo {
+        height: auto;
+        aspect-ratio: 1 / 1; /* 正方形にする */
+    }
+}
+
+
 
 
 
